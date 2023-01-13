@@ -1,0 +1,7 @@
+{
+  "name": "IdentitySave",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
