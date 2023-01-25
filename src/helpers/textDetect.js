@@ -3,10 +3,11 @@ import { Filesystem } from '@capacitor/filesystem';
 import image from './carteIdentitéRecto.png'
 import image2 from './carteidentité2.png'
 
+
 const availableChar = []
 
 export async function textDetect(imagePath) {
-    imagePath = '../carteIdentitéRecto.png';
+    imagePath = '../img.png';
     let resultString = ["", "", ""]
     let detectedText
 
