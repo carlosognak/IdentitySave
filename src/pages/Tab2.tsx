@@ -1,10 +1,14 @@
-import { IonContent, IonHeader, IonIcon, IonLabel, IonPage, IonTabButton, IonTitle, IonToolbar } from '@ionic/react';
+import React from 'react';
+import { IonContent, IonHeader, IonIcon, IonLabel, IonPage, IonTabButton, IonTitle, IonToolbar,IonCol, IonGrid, IonRow, IonImg  } from '@ionic/react';
 import { ellipse } from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
 import { textDetect } from '../helpers/textDetect';
 import './Tab2.css';
+import { usePhoto } from '../usePhoto';
+
 
 const Tab2: React.FC = () => {
+  const { photos, takePhoto } = usePhoto();
   return (
     <IonPage>
       <IonHeader>
@@ -18,6 +22,16 @@ const Tab2: React.FC = () => {
             <IonTitle size="large">Take a photo</IonTitle>
           </IonToolbar>
         </IonHeader>
+        <IonGrid>
+          <IonRow>
+            {photos.map((photo, index) => (
+              <IonCol size="6" key={index}>
+                <IonImg src={photo.webviewPath} />
+              </IonCol>
+            ))}
+          </IonRow>
+        </IonGrid>
+        
         <IonTabButton tab="tab2" onClick={async () => {
           await textDetect('aze')
         }}>

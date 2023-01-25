@@ -1,5 +1,5 @@
 {
-  "name": "IdentitySave",
+  "name": "identitysave",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -12,8 +12,8 @@
     "@capacitor/keyboard": "4.1.0",
     "@capacitor/preferences": "^4.0.2",
     "@capacitor/status-bar": "4.1.1",
-    "@ionic/pwa-elements": "^3.1.1",
     "@ionic-native/camera": "^5.36.0",
+    "@ionic/pwa-elements": "^3.1.1",
     "@ionic/react": "^6.0.0",
     "@ionic/react-router": "^6.0.0",
     "@ngx-progressbar/core": "^5.3.2",

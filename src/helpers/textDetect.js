@@ -1,11 +1,11 @@
 import Tesseract from 'tesseract.js';
 import { Filesystem } from '@capacitor/filesystem';
-import image from './carteIdentitéRecto.png'
+import image from './img.png'
 
 const availableChar = []
 
 export async function textDetect(imagePath) {
-    imagePath = '../carteIdentitéRecto.png';
+    imagePath = '../img.png';
     let resultString = ["", "", ""]
     let detectedText
     console.log('click !!! ')
