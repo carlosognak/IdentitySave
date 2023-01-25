@@ -1,15 +1,10 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFab, IonFabButton, IonIcon, IonGrid, IonRow, IonCol, IonImg, IonActionSheet, } from '@ionic/react';
-//import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
-import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
-import { Filesystem, Directory } from '@capacitor/filesystem';
-import { defineCustomElements } from '@ionic/pwa-elements/loader';
 import { camera, trash, close } from 'ionicons/icons';
-import { usePhoto } from '../usePhoto';
+import { takePhoto } from '../usePhoto';
 
 
 const Tab1: React.FC = () => {
-  const { takePhoto } = usePhoto();
   return (
     <IonPage>
       <IonHeader>

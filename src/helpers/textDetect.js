@@ -1,6 +1,6 @@
 import Tesseract from 'tesseract.js';
 import { Filesystem } from '@capacitor/filesystem';
-import image from './carteIdentitéRecto.png'
+import img from './img.png'
 import image2 from './carteidentité2.png'
 
 

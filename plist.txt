@@ -1,0 +1,8 @@
+
+	
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>photo</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>photo</string>
+	<key>NSCameraUsageDescription</key>
+	<string>photo</string>
